@@ -1,58 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Toboolist</title>
-    <link rel="icon" href="./img/logo-small.ico">
-    <link rel="stylesheet" href="./css/style.css">
-</head>
-<body>
-    <header>
-        <div class="set-header">
-            <img src="./img/Logo.png" alt="" class="logo.image">
-            <h1 class="title-logo">Toboolist</h1>  
-        </div>
-        
+    <link rel="icon" href="./img/logo-small.ico" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header class="set-header">
+      <img class="set-header-logo" src="./img/Logo.png" alt="" class="logo" />
+      <h1 class="set-header-title">Toboolist</h1>
     </header>
 
     <main>
-        <div class="set-main">
-            <div class="set-background">
-                <div>
-                     <span class="add-task">Add Task</span>
-                     <span class="add-section">Add Section</span>
-                </div>
-        
-        
-                <div>
+      <div class="container">
+        <div class="card">
+          <div class="card-header">
+            <button class="btn first-btn">Add Task</button>
+            <button class="btn second-btn">Add Section</button>
+          </div>
 
-                     <h3> New Task </h3>
-                     <ul>
-                        <li> &check; Quarterly Newsletter <span class="editorial">Editorial </span></li>
-                     </ul>
-
-                     <ul>
-                        <h3> Today </h3>
-                     <li>&check; Recruiting blog post <span class="editorial">Editorial </span></li>
-                     <li>&check; Mobile app launch <span class="goals">Q1 goals </span></li>
-                     <li>&cross; Interview John H. <span class="recruiting">Recruiting </span></li>
-                     <li>&check; Summit update to mobile storefronts <span class="mobile">Mobile </span></li>
-                     </ul>
-
-                     <ul>
-                        <h3> Upcoming </h3>
-                     <li>&cross; Schedule meeting with Alex </li>
-                     <li>&check; Homepage refresh <span class="website">Website </span></li>
-                     <li>&check; Onboard new Sales team members <span class="sales">Sales </span></li>
-                     <li>&check; Review editorial calendar <span class="editorial">Editorial </span></li>
-
-                     </ul>
-                </div>
-            </div>
+          <div class="card-body">
+            <!-- NEW TASK -->
+            <section class="todo-section">
+              <h2 class="todo-list-title">&blacktriangledown;New Task</h2>
+              <ul class="todo-list">
+                <li class="todo-list-item">
+                  <span class="mark mark-v">&check;</span>
+                  Quarterly Newsletter
+                  <span class="label editorial">Editorial</span>
+                </li>
+              </ul>
+            </section>
+            <!-- TODAY -->
+            <section class="todo-section">
+              <h2 class="todo-list-title">&blacktriangledown;Today</h2>
+              <ul class="todo-list">
+                <li class="todo-list-item">
+                  <span class="mark mark-v">&check;</span>
+                  Recruiting blog post
+                  <span class="label editorial">Editorial</span>
+                </li>
+                <li class="todo-list-item">
+                  <span class="mark mark-v">&check;</span>
+                  Mobile app launch
+                  <span class="label goals">Q1 goals</span>
+                </li>
+                <li class="todo-list-item">
+                  <span class="mark mark-x">&cross;</span>
+                  Interview John H.
+                  <span class="label recruiting">Recruiting</span>
+                </li>
+                <li class="todo-list-item">
+                  <span class="mark mark-v">&check;</span>
+                  Summit update to mobile storefronts
+                  <span class="label mobile">Mobile</span>
+                </li>
+              </ul>
+            </section>
+            <!-- UPCOMING -->
+            <section class="todo-section">
+              <h2 class="todo-list-title">&blacktriangledown;Upcoming</h2>
+              <ul class="todo-list">
+                <li class="todo-list-item">
+                  <span class="mark mark-x">&cross;</span>
+                  Schedule meeting with Alex
+                </li>
+                <li class="todo-list-item">
+                  <span class="mark mark-v">&check;</span>
+                  Homepage refresh
+                  <span class="label website">Website</span>
+                </li>
+                <li class="todo-list-item">
+                  <span class="mark mark-v">&check;</span>
+                  Onboard new Sales team members
+                  <span class="label sales">Sales</span>
+                </li>
+                <li class="todo-list-item">
+                  <span class="mark mark-v">&check;</span>
+                  Review editorial calendar
+                  <span class="label editorial">Editorial</span>
+                </li>
+              </ul>
+            </section>
+          </div>
         </div>
-
+      </div>
     </main>
-    
-</body>
+  </body>
 </html>
